@@ -1,4 +1,5 @@
 # comcomized-bp-group
+required on https://comcomized.com/
 adding to groups https://buddypress.org/about/groups/ the required comcomized feature with some user/post fields and 4 tables: 1 result + 3 logs:
 * results: 
 ||id/link-to-group||type||c/d||lastV||newV||steepness|| link/id to each of the 3 Logs||
