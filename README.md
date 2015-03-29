@@ -1,6 +1,8 @@
 # comcomized-groups
-required on https://comcomized.com/
-adding to groups https://buddypress.org/about/groups/ the required comcomized feature with some user/post fields and 4 tables: 1 result + 3 logs:
+required for implementing platform based on https://comcomized.com/term-and-conditions/   
+in usecase of  groups in assets-parent of owner-child hierarchy 
+as a plugin or practise on worspress or dupal
+by adding the required comcomized features with some user/post fields and 4 tables: 1 result + 3 logs:
 * results: 
  * ||id/link-to-group||type||c/d||lastV||newV||steepness|| link/id to each of the 3 Logs||
 * logs:
