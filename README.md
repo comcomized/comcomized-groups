@@ -4,10 +4,10 @@ and in dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  htt
 use case: groups in assets-parent of owner-child hierarchy 
 as a plugin or practise on worspress or dupal
 by adding the required comcomized features with some user/post fields and 4 tables: 1 result + 3 logs:
-* results: 
- * ||id/link-to-group||type||c/d||lastV||newV||steepness|| link/id to each of the 3 Logs||
+* results, where c*v=m*d:  
+ * | name  | type | d|c | lastV |newV|steepness| link/id to each of the 3 Logs and the group/s of activities |
 * logs:
- * ||id||content/value||in-time|| by-authority ||
+ * | id | content/value|in-time | by-authority |
    * each log of transactions or discussions or holdings,
     such that the min/max threshold of rating in group/community triggers moderators to act on (approve) record in log. 
 Where 
