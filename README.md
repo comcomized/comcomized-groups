@@ -16,6 +16,8 @@ Where
 * $comcomtype= $d$is_static@authority$is_open$pp, where y or n for is_..
  m=c/d*v is calculated, where c is members counter and v per transaction is validated such that the steepness=(nextV-v)*(c/v) is limited between +-$pp
 
+ the  record also has amount of its children and a list of its parents of different trees 
+and funtions as a node in one or more tree while
 
 using dbdelta function , for a reverse developed tree defined only by the index in some tables, each for different layer
  * parent is assets of its owner children, 
