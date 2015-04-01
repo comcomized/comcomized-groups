@@ -17,5 +17,17 @@ Where
  m=c/d*v is calculated, where c is members counter and v per transaction is validated such that the steepness=(nextV-v)*(c/v) is limited between +-$pp
 
 
+using dbdelta function , for a reverse developed tree defined only by the index in some tables, each for different layer
+ * parent is assets of its owner children, 
+ * using depth tables (the table name has the depth), 
+  * where depth is negative and starting in 0 for users, 
+  * such that d-- to go to the parent and roots is in the smallest d  (optionally also as depth_parent-id for big parents).
+* index appears as hexadecimal number which equals a list of $n separated by asci 'A', where $n is a decimal counter of the node in its parent and the other 5 asci are used as follows  
+    B
+    C
+    D
+    E
+    F 
+
 
 
