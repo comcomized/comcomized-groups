@@ -5,8 +5,7 @@ The categorized comcoms table:
 *    Each parent is an assets of its owner children,
 *    Using depth tables (the table name has the depth), as depth is negative and starting in 0 for users, for using d-- to go to the parent (and optionally also as depth_parent-id for big parents), 
  *    where roots are in the smallest d ,
- *    where  the index, appearing as hexadecimal number, equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), 
-  *    as $n is a decimal counter of the node in its parent .
+ *    where  the index, appearing as hexadecimal number, equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), as $n is a decimal counter of the node in its parent .
 *	Each categorized comcoms table is updated after an ok button is pressed to show acceptance of the offer posted by who is entitled to propose such offer.
 
 In  4 types	|transaction	|         board	   	  |		booking	    |activities in group/s|
