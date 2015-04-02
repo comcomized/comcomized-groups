@@ -1,7 +1,21 @@
 # comcomized-groups 
-required for implementing platform based on https://comcomized.com/term-and-conditions/   
-and in dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
-use case: groups in assets-parent of owner-child hierarchy 
+Required for implementing platform based on https://comcomized.com/term-and-conditions/   
+In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
+The categorized comcoms table:
+*    Each parent is an assets of its owner children,
+*    Using depth tables (the table name has the depth), as depth is negative and starting in 0 for users, for using d-- to go to the parent (and optionally also as depth_parent-id for big parents), 
+ *    where roots are in the smallest d ,
+ *    where  the index, appearing as hexadecimal number, equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), 
+  *    as $n is a decimal counter of the node in its parent .
+*	Each categorized comcoms table is updated after an ok button is pressed to show acceptance of the offer posted by who is entitled to propose such offer.
+
+In  4 types	|transaction	|         board	   	  |		booking	    |activities in group/s|
+Offer to 		|	buy	<>	sell	|	discussions<> decision|holding<>maintaining |...			 |
+Who to (Offer/Accept)|...|
+Field /value	|...|
+using dbdelta function , for a reverse developed tree defined only by the index in some tables, each for different layer
+
+Use case: groups in assets-parent of owner-child hierarchy 
 as a plugin or practise on worspress or dupal
 by adding the required comcomized features with some user/post fields and 4 tables: 1 result + 3 logs:
 * results, where c*v=m*d:  
