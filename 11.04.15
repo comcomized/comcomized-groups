@@ -1,0 +1,43 @@
+Rid (reference id) integer with the following extensions:
+    of user is negative (and positive for comcom) and 
+    of ordinary owner is followed with .percentage of her/his assets (otherwise of peer owner).
+Log-type-pages in form ?offer->!ok->..update in the 3 tables key-type, comcom , user:
+        Group-activity, 
+        Transactions  ,
+        Bord=discussion/discussion,
+        Holdings/maintainers 
+
+Tables:
+  Keys-type-table: primary keys=> list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
+
+ -Users: hidden filed of text holdings, in the form of holder(position1 ,position2,,,) , where each holder position -id in groups and is followed by brackets including the comma separated held positions  
+ 
+ +Comcom: 
+    pk accoutrement of id  
+    uk of name 
+    text of data 
+        $type= $d.$is_d_static.$authority.$is_open.$proportionality.
+             using y or n for $is_d_static or $is_open
+        $links=$transactions'.'.$discussions'.'.$holdings.$born'.'.$assets 
+              each of id of logs   $transactions or $discussions or $holding
+                              ||id||content/value||in-time|| by-authority ||
+                           each log ofs,  such that the min/max threshold 
+                           of rating in group/community triggers moderators to act on (approve) record in log. 
+                        $assets is of id in form of holder(held1 ,held2,,,) , 
+                   so that when held is holder it is followed by brackets including the comma separated held id.
+         $relations  =    3 lines of coma separated ordered items, 
+            1st line  of   parameters: text, to be by other tables sending to here
+                    c          = number of peers in the group,
+                    v          = the value held by each peer,
+                    d          = the ratio of the comcom held by all peers.
+                    m          = the value of the comcom (hence $v=$m*$peer_power, as peer_power = $d/$c=$v/$m).
+                    steepness  = ($V-$oldV)*($c/$oldV),  where |$steepness|<= $proportionality (default=1) 
+                    born   = the time of creating the record for the comcom(important when d is not static), 
+            2nd line parents = 0, as root , number of assets
+            3rd line children = number of owners peer or non.
+                 as children items are negative id to people and positive are for comcom , 
+                 and as id.percentage is for non peer holding that percentage of the comcom .     
+  
+    https://comcomized.com/term-and-conditions/
+        
+  
