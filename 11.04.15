@@ -13,7 +13,7 @@ Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , 
 Tables:
   Keys-type-table: primary keys=> blob of list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
 
- -Userid|iiaom =>holdings
+ -Userid|iiaom =>holdings, created after accepting the comcomized terms
     pk:user-id
     uk:iiaom
         text:  filed of text holdings, in the form of holder(position1 ,position2,,,) , 
