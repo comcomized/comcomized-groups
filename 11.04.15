@@ -1,21 +1,30 @@
+     4 log-page-types triggering: offer->ok-> update in 3 tables with 1 id type:
+
 Rid (reference id) integer with the following extensions:
     of user is negative (and positive for comcom) and 
     of ordinary owner is followed with .percentage of her/his assets (otherwise of peer owner).
-Log-type-pages in form ?offer->!ok->..update in the 3 tables key-type, comcom , user:
+
+Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , user:
         Group-activity, 
         Transactions  ,
         Bord=discussion/discussion,
         Holdings/maintainers 
 
 Tables:
-  Keys-type-table: primary keys=> list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
+  Keys-type-table: primary keys=> blob of list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
 
- -Users: hidden filed of text holdings, in the form of holder(position1 ,position2,,,) , where each holder position -id in groups and is followed by brackets including the comma separated held positions  
+ -Userid|iiaom =>holdings
+    pk:user-id
+    uk:iiaom
+        text:  filed of text holdings, in the form of holder(position1 ,position2,,,) , 
+        where each holder position -id in groups and is followed by brackets including the comma 
+        separated held positions
+         reputation factors
  
- +Comcom: 
-    pk accoutrement of id  
-    uk of name 
-    text of data 
+ +Comcom: id|name=>data 
+    pk: autoincrement of id  
+    uk: name 
+        text: 
         $type= $d.$is_d_static.$authority.$is_open.$proportionality.
              using y or n for $is_d_static or $is_open
         $links=$transactions'.'.$discussions'.'.$holdings.$born'.'.$assets 
