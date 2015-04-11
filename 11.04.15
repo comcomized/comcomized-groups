@@ -4,7 +4,7 @@ Rid (reference id) integer with the following extensions:
     of user is negative (and positive for comcom) and 
     of ordinary owner is followed with .percentage of her/his assets (otherwise of peer owner).
 
-Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , user:
+Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , user  [created in creation of comcom]:
         Group-activity, 
         Transactions  ,
         Bord=discussion/discussion,
@@ -13,7 +13,7 @@ Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , 
 Tables:
   Keys-type-table: primary keys=> blob of list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
 
- -Userid|iiaom =>holdings, created after accepting the comcomized terms
+ -Userid|iiaom =>holdings [created after accepting the comcomized terms]:
     pk:user-id
     uk:iiaom
         text:  filed of text holdings, in the form of holder(position1 ,position2,,,) , 
@@ -21,7 +21,7 @@ Tables:
         separated held positions
          reputation factors
  
- +Comcom: id|name=>data 
+ +Comcom: id|name=>data [created in creation of comcom]: 
     pk: autoincrement of id  
     uk: name 
         text: 
