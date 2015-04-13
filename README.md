@@ -1,12 +1,8 @@
 # comcomized-groups 
 Required for implementing platform based on https://comcomized.com/term-and-conditions/   
 In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
-The categorized comcoms table:
-*    Each parent is an assets of its owner children,
-*    Using depth tables (the table name has the depth), as depth is negative and starting in 0 for users, for using d-- to go to the parent (and optionally also as depth_parent-id for big parents), 
- *    where roots are in the smallest d ,
- *    where  the index, appearing as hexadecimal number, equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), as $n is a decimal counter of the node in its parent .
-*	Each categorized comcoms table is updated after an ok button is pressed to show acceptance of the offer posted by who is entitled to propose such offer.
+current state: https://github.com/comcomist/comcomized-groups/blob/master/11.04.15
+Each parent is an assets of its owner children (root has no parent) and the path could be indexed, (and appeared as hexadecimal number which) equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), as $n is a decimal counter of the node in its parent.	The tabled are updated after an ok button is pressed to show acceptance of the offer posted by who is entitled to propose such offer.
 * Use case with groups in hierarchy as a plugin or practise on worspress or dupal
  * by adding the required comcomized features with some user/post fields and 4 tables: 1 result + 3 logs:
   * results, where c*v=m*d:  
