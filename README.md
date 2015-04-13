@@ -2,12 +2,14 @@
 Required for implementing platform based on https://comcomized.com/term-and-conditions/   
 In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
 current state: https://github.com/comcomist/comcomized-groups/blob/master/11.04.15
-Each parent is an assets of its owner children (root has no parent) and the path could be indexed, (and appeared as hexadecimal number which) equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), as $n is a decimal counter of the node in its parent.	The tabled are updated after an ok button is pressed to show acceptance of the offer posted by who is entitled to propose such offer.
-* Use case with groups in hierarchy as a plugin or practise on worspress or dupal
- * by adding the required comcomized features with some user/post fields and 4 tables: 1 result + 3 logs:
-  * results, where c*v=m*d:  
-  * | name  | type | d|c | lastV |newV|steepness| link/id to each of the 3 Logs and the group/s of activities |
- * logs: | id | content/value|in-time | by-authority |
+Each parent is an assets of its owner children (root has no parent).  
+The path could be indexed, (and appeared as hexadecimal number which) equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), as $n is a decimal counter of the node in its parent.	 
+The tabled are updated after an ok button is pressed to show acceptance of the offer posted by who is entitled to propose such offer.
+Use case with groups in hierarchy as a plugin or practise on worspress or dupal
+* by adding the required comcomized features with some user/post fields and 4 tables: 1 result + 3 logs:
+ * results, where c*v=m*d:  
+ * | name  | type | d|c | lastV |newV|steepness| link/id to each of the 3 Logs and the group/s of activities |
+* logs: | id | content/value|in-time | by-authority |
    * as each log of transactions or discussions or holdings,
     such that the min/max threshold of rating in group/community triggers moderators to act on (approve) record in log. 
 Where 
