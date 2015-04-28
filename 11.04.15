@@ -4,38 +4,39 @@
 Rid (reference id) integer with the following extensions:
     of user is negative (and positive for comcom) and 
     of ordinary owner is followed with .percentage of her/his assets (otherwise of peer owner).
+    
+$holding_and_holders  (,,,).(,,,) modified by the admin/s of the group :
+    Concatenation of assets separated by dot, each optionally equals its Rid and is marked by the Rid of its holders separated by comma within brackets. 
+    This in it is most possessed form (until all Rid are only of users) is to be checked for not-found in each joining for all rid of the smaller in the bigger per each joining act.
 
 Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , user  [created in creation of comcom]:
         Transactions (?=>sell/buy->ok-> update ?c v,neV steepnes , iiaom reputation etc),
         Group-activity, like grops , the members are children-owners
         Bord=discussion/discussion, like forum
-        Holdings/maintainers  like blog by maintainers , the members are parents assets
+        Executive=Holdings/maintainers  like blog by maintainers , the members are parents assets
+              each as id (like link or page id ) of logs 
+                              ||id||content/value||in-time|| by-authority ||
+                           with rating in group/community triggers moderators between min/max threshold 
+                           to act on (approve) record in log. 
 
 Tables:
   Keys-type-table: primary keys=> blob of list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
 
  -Userid|iiaom =>holdings [created after accepting the comcomized terms]:
     pk:user-id
-    uk:iiaom
-        text:  filed of text holdings, in the form of holder(position1 ,position2,,,) , 
-        where each holder position -id in groups and is followed by brackets including the comma 
-        separated held positions
-         reputation factors
- 
+    uk:iiaom 
+    test: reputation per each related iiaom
+    text: holdings filed of text holdings, in the form of link to the page having $holding_and_holders, as act of mutual approval
+        
  +Comcom: id|name=>data [created in creation of comcom]: 
-    pk: autoincrement of id  
-    uk: name 
-        text: 
+    pk, primary key: autoincrement of id or $bp->group->id or $post_id 
+    uk, unique key :name 
+    text: separated by lines: 
         $type= $d.$is_d_static.$authority.$is_open.$proportionality.
              using y or n for $is_d_static or $is_open
-        $links=$transactions'.'.$discussions'.'.$holdings.$born'.'.$assets 
-              each of id of logs   $transactions or $discussions or $holding
-                              ||id||content/value||in-time|| by-authority ||
-                           each log ofs,  such that the min/max threshold 
-                           of rating in group/community triggers moderators to act on (approve) record in log. 
-                        $assets is of id in form of holder(held1 ,held2,,,) , 
-                   so that when held is holder it is followed by brackets including the comma separated held id.
-         $relations  =    3 lines of coma separated ordered items, 
+        $links= to the 4 Log-page-types
+        $holding_and_holders 
+        $relations  =    3 lines of coma separated ordered items, 
             1st line  of   parameters: text, to be by other tables sending to here
                     c          = number of peers in the group,
                     v          = the value held by each peer,
@@ -47,3 +48,6 @@ Tables:
             3rd line children = number of owners peer or non.
                  as children items are negative id to people and positive are for comcom , 
                  and as id.percentage is for non peer holding that percentage of the comcom .
+todo:
+instead v - newV to have x-newV where x is average v in x time (day, month etc) 
+
