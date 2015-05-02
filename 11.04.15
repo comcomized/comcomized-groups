@@ -50,4 +50,9 @@ Tables:
                  and as id.percentage is for non peer holding that percentage of the comcom .
 todo:
 instead v - newV to have x-newV where x is average v in x time (day, month etc) 
-
+use bp-custom.php
+define it by 3 type of events:
+1. joining/creating/logs, when  andby whom the fields are changeable
+2. table, feeds and interactions, 
+3. notification
+4. iiaom+webrtc, reputation per contact 
