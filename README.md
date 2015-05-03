@@ -2,6 +2,7 @@
 Required for implementing platform based on https://comcomized.com/term-and-conditions/   
 In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
 Current state: https://github.com/comcomist/comcomized-groups/blob/master/11.04.15  
+wiki: https://github.com/comcomist/comcomized-groups/wiki
 On wordpress developing new plugin making bp group a platform for common company:
 
 Each parent is an assets of its owner children (root has no parent).  
