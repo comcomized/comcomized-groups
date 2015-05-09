@@ -1,5 +1,5 @@
-# comcomized-groups On wordpress 
-developing new plugin making bp group a platform for common company:
+# comcomized-groups 
+Now developing on wordpress a new plugin making bp group a platform for common company:
 * Required for implementing platform based on https://comcomized.com/term-and-conditions/   
 * In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
 * Current state: https://github.com/comcomist/comcomized-groups/blob/master/11.04.15  
