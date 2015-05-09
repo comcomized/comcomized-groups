@@ -1,9 +1,9 @@
-# comcomized-groups 
-Required for implementing platform based on https://comcomized.com/term-and-conditions/   
-In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
-Current state: https://github.com/comcomist/comcomized-groups/blob/master/11.04.15  
-wiki: https://github.com/comcomist/comcomized-groups/wiki  
-On wordpress developing new plugin making bp group a platform for common company:
+# comcomized-groups On wordpress developing new plugin making bp group a platform for common company:
+* Required for implementing platform based on https://comcomized.com/term-and-conditions/   
+* In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
+* Current state: https://github.com/comcomist/comcomized-groups/blob/master/11.04.15  
+* wiki: https://github.com/comcomist/comcomized-groups/wiki  
+
 
 Each parent is an assets of its owner children (root has no parent).  
 The path could be indexed, (and appeared as hexadecimal number which) equals a list of $n separated by asci 'A' (and optionally the other 5 B C D E F asci are used somehow), as $n is a decimal counter of the node in its parent.	 
