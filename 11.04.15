@@ -46,7 +46,8 @@ Tables:
     pk:user-id
     uk:iiaom 
     test: reputation per each related iiaom
-    text: holdings filed of text holdings, in the form of link to the page having $holding_and_holders, as act of mutual approval
+    text: holdings filed of text holdings, in the form of link to the page having $holding_and_holders, 
+                as act of mutual approval
         
  +Comcom: id|name=>data [created in creation of comcom]: 
     pk, primary key: autoincrement of id or $bp->group->id or $post_id 
