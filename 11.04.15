@@ -1,13 +1,33 @@
      4 log-page-types triggering: offer->ok-> update in 3 tables with 1 id type:
                          https://comcomized.com/term-and-conditions/
                          
-Rid (reference id) integer with the following extensions:
-    of user is negative (and positive for comcom) and 
-    of ordinary owner is followed with .percentage of her/his assets (otherwise of peer owner).
-    
-$holding_and_holders  (,,,).(,,,) modified by the admin/s of the group :
-    Concatenation of assets separated by dot, each optionally equals its Rid and is marked by the Rid of its holders separated by comma within brackets. 
-    This in it is most possessed form (until all Rid are only of users) is to be checked for not-found in each joining for all rid of the smaller in the bigger per each joining act.
+
+^
+| $n, mapped to a point on a vertical line, is a comcomized node-id:
+|  when of a human user, it is a negative -wp_p_users->id, 
+|  when of a comcom. it is a positive integer id of the (bp) group and 
+|  when it is used in asset of an ordinary owner,
+|	 it is followed with .percentage of her/his possession  
+|      in the asset, otherwise it belongs to a peer owner.
+|
+| <----------------------a=($n,,,)---”a” is a bp group id
+|                          |     |
+| $holding_and_holders=($n,($n,,,),,).(,$n,,,).(,$n,,,).(,$n,,,)
+|                            | 
+| <--------------------------b<--- “b” is a human user id (negative $n)
+|
+| $holding_and_holders of the site can be mapped to a one line string of 
+| concatenation of assets separated by dot, where each asset is a parent 
+| from different tree and is marked by brackets, within which each of 
+| the $n items, separated by comma, is of a child owner of the asset and
+| as the asset optionally equals its $n. 
+|	Such string can be then used for mapping the hierarchies for 
+| traversing between the nodes, where all matches of $n in the string 
+| (notified to the node after modification) can be stored in the 
+| $n_offsets of the node.
+| 	In each act of joining for all $n of the smaller in the bigger, the
+| $holding_and_holders, in it is most processed form (until all $n are
+| negative), is to be checked for being not-matched. 
 
 Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , user  [created in creation of comcom]:
         Transactions (?=>sell/buy->ok-> update ?c v,neV steepnes , iiaom reputation etc),
@@ -20,7 +40,7 @@ Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , 
                            to act on (approve) record in log. 
 
 Tables:
-  Keys-type-table: primary keys=> blob of list of Rid having same d,c,v,newV,m,s,pp,pr is_open+is_static...
+  Keys-type-table: primary keys=> blob of list of $n having same d,c,v,newV,m,s,pp,pr is_open+is_static...
 
  -Userid|iiaom =>holdings [created after accepting the comcomized terms]:
     pk:user-id
