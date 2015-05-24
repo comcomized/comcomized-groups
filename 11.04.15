@@ -12,12 +12,12 @@
 |
 | <----------------------a=($n,,,)---”a” is a bp group id
 |                          |     |
-| $holding_and_holders=($n,($n,,,),,)+(,$n,,,)+(,$n,,,)+(,$n,,,)
+| $holding_and_holders=($n,($n,,,),,)/br(,$n,,,)/br(,$n,,,)/br(,$n,,,)
 |                            | 
 | <--------------------------b<--- “b” is a human user id (negative $n)
 |
-| $holding_and_holders of the site, or of any specific holder in the site, can be mapped to atleast one line string of 
-| concatenation of assets separated by plus sign(+), where each asset is a parent 
+| $holding_and_holders of the site, or of any specific holder in the site, can be mapped to one string of 
+| concatenation of assets in different line, where each asset is a parent 
 | from different tree and is marked by brackets, within which each of 
 | the $n items, separated by comma, is of a child owner of the asset and
 | as the asset optionally equals its $n. 
@@ -27,7 +27,7 @@
 | $n_offsets of the node.
 | 	In each act of joining for all $n of the smaller in the bigger, the
 | $holding_and_holders, in it is most processed form (until all $n are
-| negative), is to be checked for being not-matched. 
+| negative), is to be checked for being not-matched on the same line. 
 
 Log-page-types in form ?offer->!ok->..update in the 3 tables key-type, comcom , user  [created in creation of comcom]:
         Transactions (?=>sell/buy->ok-> update ?c v,neV steepnes , iiaom reputation etc),
