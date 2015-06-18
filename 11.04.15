@@ -12,9 +12,14 @@
 |
 | <----------------------a=($n,,,)---”a” is a bp group id
 |                          |     |
-| $holding_and_holders=($n,($n,,,),,)/br(,$n,,,)/br(,$n,,,)/br(,$n,,,)
+| $holding_and_holders==($n,($n,,,),,)/br(,$n,,,)/br(,$n,,,)/br(,$n,,,)
 |                            | 
 | <--------------------------b<--- “b” is a human user id (negative $n)
+|
+| $holding_and_holders==[
+| (key)id =>,         // id of the holder $n 
+|     heldby =>,     // list of id of its children holders
+|     holding=>]     // null when is tree used for validating joining or a list of pairs of (id of of the holding parent, id of its tree). 
 |
 | $holding_and_holders of the site, or of any specific holder in the site, can be mapped to one string of 
 | concatenation of assets in different line, where each asset is a parent 
