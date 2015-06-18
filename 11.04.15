@@ -17,9 +17,10 @@
 | <--------------------------b<--- “b” is a human user id (negative $n)
 |
 | $holding_and_holders==[
-| (key)id =>,         // id of the holder $n, (positive group id, or negative user id, but without .percentage notating the non peer holding percentage).
+| (key)id =>,        // id of the holder $n, (positive group id, or negative user id, but without .percentage notating the non peer holding percentage).
 |     heldby =>,     // list of id of its children holders, used for Downwards traversal.
-|     holding=>]     // null when it is a tree used for validating joining or a list of pairs of (id of of the holding parent, id of its tree) used for Upwards traversal. 
+|     holding=>]     // null when it is a tree used for validating joining in which case the heldby replaces the id or
+|                   //     a list of pairs of (id of of the holding parent, id of its tree) used for Upwards traversal. 
 |
 | $holding_and_holders of the site, or of any specific holder in the site, can be mapped to one string of 
 | concatenation of assets in different line, where each asset is a parent 
