@@ -60,8 +60,17 @@ function comcomized_install() {
 		UNIQUE KEY id (id)
 	) $charset_collate;";
 
-/*This table is used in wp plugin site  as its fingerprint with its compressed form are available to download for to be cloned, where its data is processed on the client side by it pair client app. The table use id of user or group distinct by is_group+2*id. Each (of symmetric key encrypting) its rows is encrypted with pubkey of the entity after sometime any of its column with pubkey of roles. Each entinty has its iiaom either of the prviate person or of the logo including the address of the group.
-A metadata object per bp user and group or 2 tables $comcoms=($comcom_users,$comcom_groups)==[
+/*
+// This table is used in wp plugin site  as its fingerprint with its compressed 
+// form are available to download for to be cloned, where its data is processed on 
+// the client side by it pair client app, such as gpg4win, kgpg or of the guardianproject 
+// listed in https://guardianproject.info/code/gnupg/. The table use id of user or group 
+// distinct by is_group+2*id. Each (of symmetric key encrypting) its rows is encrypted
+// with pubkey of the entity after sometime any of its column with pubkey of roles. 
+// Each entinty has its iiaom either of the prviate person or of the logo including 
+// the address of the group.
+// A metadata object per bp user and group or 2 tables $comcoms=($comcom_users,$comcom_groups)==
+[
 (key)id =>,
 	// in users or groups the $n/2 of the id of the holder $n,
 	// (even as $n=group_id*2, or odd as #n=user_id*2+1),
