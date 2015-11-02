@@ -60,17 +60,32 @@ function comcomized_install() {
 		UNIQUE KEY id (id)
 	) $charset_collate;";
 /*
-// This sql table is used in wp plugin site and its fingerprint with its compressed 
-// form are available to download to be cloned from that site. Its record id represent an 
-// entity being user or group as id=is_group+2*id. Each of (symmetric key encrypting) 
-// its rows is encrypted with pubkey of the entity and  sometimes also after any of its column 
-// with pubkey of specific roles. Its queries are encrypted and  
-// resulted in ciphertext of csv format to be, only in the client side, copy and pasted to 
-// app using gpg, such as gpg4win, kgpg or of the guardianproject, and then copy and pasted to 
-// be processed using js   parsing the plantext csv to html table.
-// Each entity has its iiaom either of the private person or of the logo including 
-// the address of the group.
-// A metadata object per bp user and group or 2 tables $comcoms=($comcom_users,$comcom_groups)==
+// This somewhat virtual sql table is temporal and dumped to a compressed file. 
+// It is used in site allowing it with its fingerprint to be downloaded 
+// for to clone that into other site. 
+// Its key represents an id of entity being user or group, as key=is_group+2*id. 
+// Each of its records, as a set of metadata keys/values of the user or group page
+// is once added to the page to be later get as value (after being modified by the entity),
+// where the value is a ciphertext of [symmetric key encrypting data, the] data
+// being encrypted with the pubkey of the entity (and sometimes also 
+// after any of its column/metadata-keys encrypted with pubkey of specific roles). 
+// Its visibility is only for the record of the entity or of the visible part
+// of the record for the children of nearby parents in ciphertext in their ancestor, 
+// where the ciphertext is dumped and encrypted with the ancestor's pubkey, of 
+// which private key is with the children in their holding and where 
+// the visible_depth >=1 of the ancestor, default =1  for ancestor= grandparent.
+// Its ciphertext queries are of csv format to be, only in the client side, 
+// copy and pasted to app using gpg, (such as gpg4win, kgpg or of 
+// the guardianproject), and then copy and pasted to 
+// be processed using js,( such as csv-to-html-table) for parsing the plantext csv to html table.
+/// todo:
+// 1. offer in and out the group 
+// 1.1. okingroup
+// 1.1.1 transaction 
+// 1.2 okoutgroup
+// 1.2.1 trnasaction
+// Each entity has its iiaom either of the private person or of  
+// the logo including the address of the group.
 [
 (key)id =>,
 	// in users or groups the $n/2 of the id of the holder $n,
