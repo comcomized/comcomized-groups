@@ -1,4 +1,4 @@
-# comcomized-groups 
+# comcomized-groups under the [humanitarian-agpl-license](http://namzezam.wikidot.com/humanitarian-agpl-license)
 Now developing on wordpress a new plugin making bp group a platform for common company:
 * Required for implementing platform based on https://comcomized.com/term-and-conditions/   
 * In dvolpement under the Groups Collaborating Comcomized Platform (GCCP)  http://namzezam.wikidot.com/blog:24  
