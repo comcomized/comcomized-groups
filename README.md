@@ -2,7 +2,7 @@
 
 The comcomized units platform is made of trees of ownership over assets - in which the asset is the parent of its owners, where 
 * each separated tree-page is, in trees numbered category, the parent of only one current root (and hence when the tree replace its root, the new root is made its only child), 
-* each of its offspring is, categorized as peer or ordinary, a position-of-ownership-page and 
+* each of its offspring, categorized as peer or ordinary, is a position-of-ownership-page and 
 * each personal-page belonging to only one human owner may have positions of ownership by 
  * tagging her/his position-of-ownership-page in the corresponding root-page, which must appear not more than once per owner!
 
