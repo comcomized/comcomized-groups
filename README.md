@@ -4,7 +4,7 @@ The comcomized units platform is made of trees of ownership over assets - in whi
 * each tree-page is, in trees numbered category, the parent of only one current root (and hence when the tree replace its root, the new root is made its only child),
 * each of its offspring, categorized as peer or ordinary, is a position-of-ownership-page and
 * each personal-page, belonging to only one human owner, may have positions of ownership by
-   * tagging her/his position-of-ownership-page in the corresponding root-page, which must appear not more than once in personal-page of an owner!
+   * tagging her/his position-of-ownership-page in its corresponding root-page, as each root-page may appear not more than once in each personal-page of such owner!
 
 Now developing on wordpress a new plugin making bp group a platform for common company:
 * Required for implementing platform based on https://comcomized.com/term-and-conditions/   
